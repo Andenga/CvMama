@@ -1,0 +1,11 @@
+name: Lydia
+super: true
+id: 857dbc7f-813d-48ef-b99e-aa6f80b770aa
+password_hash: $2y$10$QOc2qn4eLeiOocvqJm8z.uc8La52ZI7IXH1oRVL4B/W5L5G8f53pC
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing
+  taxonomies:
+    careers_advice_categories:
+      after_save: create_another

@@ -1,0 +1,9 @@
+title: 'Career Advice Category'
+preview_targets:
+  -
+    label: Term
+    url: '{permalink}'
+    refresh: true
+template: career_advice_category.index
+term_template: career_advice_category.show
+layout: layout

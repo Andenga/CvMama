@@ -1,0 +1,7 @@
+title: Pages
+taxonomies:
+  - careers_advice_categories
+revisions: false
+route: '{parent_uri}/{slug}'
+structure:
+  root: true

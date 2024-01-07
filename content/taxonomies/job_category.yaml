@@ -1,0 +1,9 @@
+title: 'Job category'
+preview_targets:
+  -
+    label: Term
+    url: '{permalink}'
+    refresh: true
+template: job_category.index
+term_template: job_category.show
+layout: layout

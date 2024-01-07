@@ -1,0 +1,17 @@
+
+
+<header>
+    <p>Search results for</p>
+    <h1> {{get:q }}</h1>
+</header>
+
+<section>
+    {{ search:results }}
+    <div>
+        <div>
+            <h2><a href="{{ url }}">{{ title }}</a></h2>
+            <div>{{ collection:careers }}</div>
+        </div>
+    </div>
+    {{ /search:results }}
+</section>
