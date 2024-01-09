@@ -1,71 +1,105 @@
 
 
+<!--
 <div class="bg-lime-600 mb-10">
     <div class="pl-32 pt-6 pb-6">
         <p class="mt-6 text-4xl mb-2 bg-white w-72">Welcome to the</p>
         <h1 class="mt-6 text-4xl mb-2 bg-white text-red-700 w-1/3">National Careers Service</h1>
         <p class="mt-4 font-medium bg-white w-2/5 mb-6">We provide careers information, advice and guidance. We can help you make decisions at all stages in your career.</p> 
     </div>
-  </div>
+</div>
+-->
   
   <div class="ml-32 mr-32 mb-6">
     <div>
-    <h2>Get personalised careers advice and information</h2>
+    <h2 class="mt-6 mb-5 font-extrabold text-3xl">Get personalised careers advice and information</h2>
     </div>
   </div>
 
 
-  <div class="ml-32 mr-32">
+  <div class="ml-32 mr-32 mt-4 mb-8 text-l leading-4 tracking-wider">
+    <!--
+    <form class="example" action="search" >
+      <input type="search" class="rounded-full border-black border-2 pl-5 pt-2 pb-2 w-2/3" placeholder="Enter a job title..." name="q">
+      <button type="submit" class="rounded-full bg-gray-950 -ml-10 pl-3 pr-3 pb-2 pt-2 ">
+        <i class="fa fa-search text-white"></i>
+      </button>
+  </form>
+    -->
 
-    <label for="{{select}}">Show advice for:</label>
-    <select>
+
+    <!--  
+    <form class="example" action="search" >
+      <input type="search" class="rounded-full border-black border-2 pl-5 pt-2 pb-2 w-2/3" placeholder="Enter a job title..." name="q">
+      <button type="submit" class="rounded-full bg-gray-950 -ml-10 pl-3 pr-3 pb-2 pt-2 ">
+        <i class="fa fa-search text-white"></i>
+      </button>
+    </form>
+  -->
+
+    <form class="example" action="search">
+
+    <label for="{{select}}" class="pr-2">Show advice for:</label>
+    <select type="search" name="q" class="rounded-none border-2 border-black pr-2 pl-2 pt-2 pb-2">
       {{ taxonomy:career_advice_category : terms}}
         <option ><p id="{{ select }}"> {{ title }}</p></option>
       {{ /taxonomy:career_advice_category : terms}}
     </select>
-    <button> See suggestions </button>
+    <button type="submit" class="rounded-full border-2 border-black ml-10 pt-3 pb-3 pl-14 pr-14 bg-pink-600 text-white"> See suggestions </button>
+    </form>
+
   </div>
   
 
-  <div class="ml-32 mr-32">
-    <div class="grid gap-4 grid-cols-3">
 
-      <div class="bg-lime-600">
-        <p>Skills assessment</p>
-        <p>Learn more about your skills and match them to potential new careers.</p>
-        <button type="button">Assess your skills</button>
+
+  <div class="ml-32 mr-32 text-lg mb-6">
+    <div class="grid gap-14 grid-cols-3 items-center">
+
+      <div class="pl-2 pr-2 mb-4">
+        <p class="font-extrabold text-2xl pb-5">Skills assessment</p>
+        <p class="pr-10 pb-3">Learn more about your skills and match them to potential new careers.</p>
+        <button type="button" class="rounded-full  pt-2 pb-2 pl-6 pr-6 bg-pink-600 text-white hover:bg-rose-950">
+          <a href="">Assess your skills</a>
+        </button>
       </div>
 
-      <div class="bg-red-200">
-        <p>Skills assessment</p>
-        <p>Learn more about your skills and match them to potential new careers.</p>
-        <button type="button">Assess your skills</button>
+      <div class="pl-2 pr-2 mb-4">
+        <p class="font-extrabold text-2xl pb-5">Explore careers</p>
+        <p class="pr-10 pb-3">Choose from over 800 career profiles to discover what a job involves.</p>
+        <button type="button" class="rounded-full  pt-2 pb-2 pl-6 pr-6 bg-pink-600 text-white hover:bg-rose-950">
+          <a href="">Search job profiles</a>
+        </button>
       </div>
 
-      <div class="bg-yellow-600">
-        <p>Skills assessment</p>
-        <p>Learn more about your skills and match them to potential new careers.</p>
-        <button type="button">Assess your skills</button>
+      <div class="pl-2 pr-2 mb-4">
+        <p class="font-extrabold text-2xl pb-5">Find a course</p>
+        <p class="pr-10 pb-3">Look for learning and training opportunities local to you.</p>
+        <button type="button" class="rounded-full  pt-2 pb-2 pl-6 pr-6 bg-pink-600 text-white hover:bg-rose-950">
+          <a href="">Look for courses</a>
+        </button>
       </div>
 
     </div>
   </div>
 
 
-  <div class="ml-32 mr-32">
-    <p>Careers Advice</p>
-    <div class="grid gap-4 grid-cols-3">
-      <div class="bg-lime-600">
-        <p>Making careers choices</p>
+  <div class="ml-32 mr-32 text-lg">
+    <p class="font-extrabold text-2xl pb-5">Careers Advice</p>
+
+    <div class="grid gap-10 grid-cols-3">
+      <div class="bg-blue-200">
+        <p class="font-extrabold text-xl pb-5">Making careers choices</p>
         <p>
           Whether starting your career, changing jobs or working out your next step, get advice to make the right choice for you.
         </p>
       </div>
-      <div class="bg-red-200">
+
+      <div>
         <p>Getting a job </p>
         <p>Be successful in the recruitment process with tips on great CVs, interviews and graduate scheme applications.</p>
       </div>
-      <div class="bg-yellow-600">
+      <div>
         <p>Progressing your career</p>
         <p>Move up in your career by developing new skills. Find opportunities like volunteering and online learning.
         </p>

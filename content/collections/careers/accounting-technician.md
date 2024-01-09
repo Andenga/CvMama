@@ -4,7 +4,8 @@ blueprint: career
 title: 'Accounting technician'
 author: 857dbc7f-813d-48ef-b99e-aa6f80b770aa
 updated_by: 857dbc7f-813d-48ef-b99e-aa6f80b770aa
-updated_at: 1704626868
+updated_at: 1704674812
+template_fie: careers/show
 job_category:
   - administration
 ---

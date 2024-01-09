@@ -1,19 +1,11 @@
 
 
-
-<div class="bg-lime-600">
-  <div class="pl-32 pt-6 pb-6">
-      <p class="mt-6 text-4xl mb-2 bg-white w-72">{{ title }}</p>
-      <p class="mt-4 font-medium bg-white w-96 mb-6">Find out what a job involves and if it's right for you.</p> 
-  </div>
-</div>
-
 <div class="bg-blue-100 pb-4 pt-6 pl-32 pr-32 mb-6">
   <p class="pb-2 pl-2">Search job titles</p>
 
   <form class="example" action="search" >
     <input type="search" class="rounded-full border-black border-2 pl-5 pt-2 pb-2 w-2/3" placeholder="Enter a job title..." name="q">
-    <button type="submit" class="rounded-full bg-gray-950 pl-2 pr-2 pb-2 pt-2 ">
+    <button type="submit" class="rounded-full bg-gray-950 -ml-10 pl-3 pr-3 pb-2 pt-2 ">
       <i class="fa fa-search text-white"></i>
     </button>
   </form>
@@ -25,15 +17,17 @@
   <p class="pb-6 font-bold text-4xl">Explore by job category</p>
 
   <div class="columns-3 ... ">
+
     <ul >
       {{ taxonomy:job_category}}
-        <li class="text-blue-700 text-l pb-2 pt-2 no-underline hover:underline hover:text-blue-950 hover:font-bold">
+        <li class="text-blue-700 text-l pb-2 pt-2 font-bold no-underline hover:underline hover:text-blue-950 hover:font-extrabold">
           <a href="{{ url }}">{{ title }}</a>
         </li>
       {{ /taxonomy:job_category}}
     </ul>
   </div>
 </div>
+
 
 
 

@@ -7,6 +7,5 @@ updated_by: 857dbc7f-813d-48ef-b99e-aa6f80b770aa
 updated_at: 1704627390
 job_category:
   - administration
-  - business-and-finance
 ---
 Internal and external auditors check organisations' financial records and procedures to make sure they are accurate and efficient.

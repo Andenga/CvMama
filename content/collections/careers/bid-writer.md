@@ -8,6 +8,5 @@ updated_at: 1704627425
 alternative_name: 'Bid coordinator'
 job_category:
   - administration
-  - managerial
 ---
 Bid writers prepare documents used to request contracts to provide services or apply for funding.

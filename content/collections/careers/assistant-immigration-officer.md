@@ -8,6 +8,5 @@ updated_at: 1704627356
 alternative_name: 'Assistant immigration enforcement officer'
 job_category:
   - administration
-  - government-services
 ---
 Assistant immigration officers check that people have the right to visit or stay in the UK.

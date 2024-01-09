@@ -1,19 +1,37 @@
-<div class="mr-32 ml-32">
 
-  <h1 class="font-extrabold pb-6 text-5xl pt-4"> {{ title }}</h1>
 
-  {{ entries }}
-    <ul>
-    {{ results }}
-      <li class="text-blue-700 text-2xl font-bold  pt-2 no-underline hover:underline hover:text-blue-950 hover:font-extrabold">
-        <a href="{{ url }}">{{ title }}</a>
-      </li>
-      <p class="text-slate-500 ">{{ alternative_name }}</p>
-      <p>{{ content }}</p>
-    {{ /results }}
-    </ul>
+<!--Nav bar || Breadcrumbs-->
+
+
+<div class="mr-56 ml-32 flex .. gap-10 pt-4">
+
+  <div >
+
+    <h1 class="font-extrabold pb-6 text-5xl pt-6"> {{ title }}</h1>
+
+    {{ entries paginate="30" }}
+      <ul>
+      {{ results }}
+        <li class="text-blue-700 text-2xl font-bold  pt-4 no-underline hover:underline hover:text-blue-950 hover:font-extrabold">
+          <a href="{{ url }}">{{ title }}</a>
+        </li>
+        <p class="text-slate-500 ">{{ alternative_name }}</p>
+        <p >{{ content }}</p>
+      {{ /results }}
+      </ul>
   {{ /entries }}
 
+  </div>
 
+  <div class="mr-15">
+    <h1 class="font-extrabold pb-6 text-2xl pt-6 mt-2 text-nowrap">Other job categories</h1>
+    <ul >
+      {{ taxonomy:job_category}}
+        <li class="text-blue-700 underline hover:text-blue-950">
+          <a href="{{ url }}">{{ title }}</a>
+        </li>
+      {{ /taxonomy:job_category}}
+    </ul>
 
+  </div>
 </div>

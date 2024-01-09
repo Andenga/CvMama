@@ -2,5 +2,7 @@ title: 'Retail and sales'
 author: 857dbc7f-813d-48ef-b99e-aa6f80b770aa
 template: careers/job_category/show
 updated_by: 857dbc7f-813d-48ef-b99e-aa6f80b770aa
-updated_at: 1704384554
+updated_at: 1704672147
 blueprint: job_category
+template_field: careers/job_category/show
+duplicated_from: 'job_category::administration-1-1'

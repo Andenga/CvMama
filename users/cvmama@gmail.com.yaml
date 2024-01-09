@@ -6,6 +6,12 @@ preferences:
   collections:
     pages:
       after_save: continue_editing
+    careers:
+      after_save: continue_editing
   taxonomies:
     careers_advice_categories:
       after_save: create_another
+    sample:
+      after_save: continue_editing
+    career_advice_category:
+      after_save: continue_editing
