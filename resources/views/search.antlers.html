@@ -1,17 +1,61 @@
+<div class="mr-56 ml-32 flex .. gap-10 pt-4">
+    <div >
+        <header>
+            <h1 class="mt-6 mb-5 font-extrabold text-2xl pb-5">Search results for</h1>
+        </header>
+        
+        <section>
 
+            <div class="bg-blue-100 pb-4 pt-6 pl-32 pr-32 mb-6">
+                <p class="pb-2 pl-2">Search job titles</p>
+            
+                <form class="example" action="search" >
+                <input type="search" class="rounded-full border-black text-xl border-2 pl-5 pt-2 pb-2 w-2/3" placeholder="{{get:q }}" name="q">
+                <button type="submit" class="rounded-full bg-gray-950 -ml-10 pl-3 pr-3 pb-2 pt-2 ">
+                    <i class="fa fa-search text-white"></i>
+                </button>
+                </form>
+            
+            </div>
 
-<header>
-    <p>Search results for</p>
-    <h1> {{get:q }}</h1>
-</header>
+            
+        
+            
+        
+            <p class="mt-6 mb-5 font-extrabold text-l"> {{ total_results }} results found</p>  
 
-<section>
-    {{ search:results }}
-    <div>
-        <div>
-            <h2><a href="{{ url }}">{{ title }}</a></h2>
-            <div>{{ collection:careers }}</div>
-        </div>
+        {{ search:results }}
+            <div>
+                <div>
+                    <ul>
+                    <li class="text-blue-700 text-2xl font-bold  pt-4 no-underline hover:underline hover:text-blue-950 hover:font-extrabold">
+                        <a href="{{ url }}">{{ title }}</a>
+                    </li>
+                    <p class="text-slate-500 ">{{ alternative_name }}</p>
+                    <p >{{ content }}</p>
+                    <p >Salary: {{ salary_range }}</p>
+                    <p >Found in : {{ job_category }}</p>
+                    <div>{{ collection:careers }}</div>
+                </div>
+            </div>
+        {{ /search:results }}
+        </section>
     </div>
-    {{ /search:results }}
-</section>
+    <div class="mr-15">
+        <h1 class="font-extrabold pb-6 text-2xl pt-6 mt-2 text-nowrap">Other job categories</h1>
+        <ul >
+          {{ taxonomy:job_category}}
+            <li class="text-blue-700 underline hover:text-blue-950">
+              <a href="{{ url }}">{{ title }}</a>
+            </li>
+          {{ /taxonomy:job_category}}
+        </ul>
+    
+      </div>
+ 
+
+
+
+
+</div>
+

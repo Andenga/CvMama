@@ -41,6 +41,31 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+          -
+            handle: salary_range
+            field:
+              min: 0
+              max: 100
+              step: 1
+              type: range
+              display: 'Salary Range'
+              icon: range
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: typical_hours
+            field:
+              type: integer
+              display: 'Typical hours'
+              icon: integer
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
   sidebar:
     display: Sidebar
     sections:
